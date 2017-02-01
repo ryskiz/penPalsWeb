@@ -11,13 +11,19 @@ $(document).ready(function(){
             $('#brand').slideDown();
         }
     });
-    $('h1').on('click', function(){
-        $(this).fadeOut("slow", function(){
-
-        });
-        $(this).fadeIn("slow", function(){
-            
-        })
-    })
+    // $('h1').on('click', function(){
+    //     $(this).fadeOut("slow", function(){
+    //
+    //     });
+    //     $(this).fadeIn("slow", function(){
+    //
+    //     })
+    // })
+    $('.album-photo').on('mouseenter', function(){
+        $(this).addClass('blur');
+    });
+    $('.album-photo').on('mouseleave', function(){
+        $(this).removeClass('blur');
+    });
     
 });
