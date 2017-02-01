@@ -19,10 +19,12 @@ header.sticky {
     height: 100px;
     background: #0b030b;
     text-align: center;
-    padding-left: 20px;
-
+    z-index: 1000;
 }
 img {
     max-width: 100%;
     max-height: 100%;
+}
+.container-fluid {
+    padding-top: 200px;
 }
