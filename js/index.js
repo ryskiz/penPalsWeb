@@ -1,7 +1,8 @@
 
 $(document).ready(function(){
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 30){
+        if ($(this).scrollTop() > 200){
+            console.log('trigger back up');
             $('header').addClass("sticky");
             $('#brand').animate({
                 "height": "80px"
@@ -9,7 +10,9 @@ $(document).ready(function(){
         }
         else {
             $('header').removeClass("sticky");
-            $('#brand').slideDown();
+            // $('').animate({
+            //     "height": "180px"
+            // }).next().slideUp();
         }
     });
     $('.album-photo').on('mouseenter', function(){
