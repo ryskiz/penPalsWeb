@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass -w assets/stylesheets/style.scss -o styles/"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/ryskiz/penPalsWeb/issues"
   },
-  "homepage": "https://github.com/ryskiz/penPalsWeb#readme"
+  "homepage": "https://github.com/ryskiz/penPalsWeb#readme",
+  "dependencies": {
+    "build-css": "^0.2.0",
+    "node-sass": "^4.5.0"
+  }
 }
