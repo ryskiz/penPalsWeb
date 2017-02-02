@@ -1,18 +1,16 @@
 
 $(document).ready(function(){
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 200){
+        if ($(this).scrollTop() > 30){
             console.log('trigger back up');
             $('header').addClass("sticky");
-            $('#brand').animate({
-                "height": "80px"
-            }).next().slideDown("slow");
+            $('#brand').css("transition", "all 0.4s ease");
+            $('#brand').css("height", "80px");
         }
         else {
             $('header').removeClass("sticky");
-            // $('').animate({
-            //     "height": "180px"
-            // }).next().slideUp();
+            $('#brand').css("transition", "all 0.4s ease");
+            $('#brand').css("height", "180px");
         }
     });
     $('.album-photo').on('mouseenter', function(){
