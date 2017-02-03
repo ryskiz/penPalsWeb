@@ -1,6 +1,22 @@
 * {
   box-sizing: border-box; }
 
+.soundcloudContainer {
+  padding: 0%; }
+
+#sc-widget {
+  width: 75%;
+  height: 100%;
+  margin: auto 50px; }
+
+@media (min-width: 992px) {
+  .soundcloudContainer {
+    height: 470px; } }
+
+@media (min-width: 1200px) {
+  .soundcloudContainer {
+    height: 570px; } }
+
 header {
   position: fixed;
   width: 100%;
@@ -90,12 +106,3 @@ h2 {
   font-size: 110px;
   color: white;
   line-height: 150px; }
-
-.soundcloudContainer {
-  height: 570px;
-  padding: 0%; }
-
-#sc-widget {
-  width: 75%;
-  height: 100%;
-  margin: auto 50px; }

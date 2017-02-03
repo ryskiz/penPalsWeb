@@ -1,9 +1,50 @@
 $black-background-color: rgb(0, 0, 0);
 $font-white-color: rgb(255, 255, 255);
 
+$small-breakpoint: 576px;
+$medium-breakpoint: 768px;
+$large-breakpoint: 992px;
+$xlarge-breakpoint: 1200px;
 
+
+//Normalize CSS
 * {
     box-sizing: border-box;
+}
+
+
+.soundcloudContainer{
+  padding: 0%;
+}
+
+//SC Widget - widthL 75%, height 570px margin: auto 50px
+#sc-widget{
+  width: 75%;
+  height: 100%;
+  margin: auto 50px;
+}
+
+@media (min-width: 0px) {
+
+
+}
+
+@media (min-width: $small-breakpoint) {
+
+}
+
+@media (min-width: $medium-breakpoint) {
+
+}
+@media (min-width: $large-breakpoint) {
+  .soundcloudContainer{
+    height: 470px;
+  }
+}
+@media (min-width: $xlarge-breakpoint) {
+  .soundcloudContainer{
+    height: 570px;
+  }
 }
 
 header {
@@ -113,14 +154,3 @@ h2 {
 
 //Sound Cloud container
 //height 570px; padding 0%
-.soundcloudContainer{
-  height: 570px;
-  padding: 0%;
-}
-
-//SC Widget - widthL 75%, height 570px margin: auto 50px
-#sc-widget{
-  width: 75%;
-  height: 100%;
-  margin: auto 50px;
-}
