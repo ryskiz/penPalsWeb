@@ -1,3 +1,7 @@
+$black-background-color: rgb(0, 0, 0);
+$font-white-color: rgb(255, 255, 255);
+
+
 * {
     box-sizing: border-box;
 }
@@ -90,3 +94,19 @@ h2 {
 /*#sc-widget {*/
 /*padding-top: 50px;*/
 /*}*/
+
+.musicSection {
+  background-color: $black-background-color;
+  height: 200px;
+}
+
+.musicHeader {
+  text-align: right;
+  vertical-align: middle;
+}
+
+.musicText{
+  font-size: 110px;
+  color: white;
+  line-height: 200px;
+}
