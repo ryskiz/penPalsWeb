@@ -97,7 +97,7 @@ h2 {
 
 .musicSection {
   background-color: $black-background-color;
-  height: 200px;
+  height: 150px;
 }
 
 .musicHeader {
@@ -108,5 +108,19 @@ h2 {
 .musicText{
   font-size: 110px;
   color: white;
-  line-height: 200px;
+  line-height: 150px;
+}
+
+//Sound Cloud container
+//height 570px; padding 0%
+.soundcloudContainer{
+  height: 570px;
+  padding: 0%;
+}
+
+//SC Widget - widthL 75%, height 570px margin: auto 50px
+#sc-widget{
+  width: 75%;
+  height: 100%;
+  margin: auto 50px;
 }
