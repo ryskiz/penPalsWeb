@@ -9,6 +9,20 @@
   height: 100%;
   margin: auto 50px; }
 
+@media (min-width: 0px) {
+  .site-container {
+    padding: 30px; } }
+
+@media (min-width: 576px) {
+  .album-photo {
+    max-height: 200px; } }
+
+@media (min-width: 768px) {
+  .album-photo {
+    max-height: 100%; }
+  .soundcloudContainer {
+    height: 360px; } }
+
 @media (min-width: 992px) {
   .soundcloudContainer {
     height: 470px; } }
@@ -21,19 +35,34 @@ header {
   position: fixed;
   width: 100%;
   text-align: center;
-  font-size: 72px;
   line-height: 108px;
-  height: 200px;
+  height: 180px;
+  font-size: 24px;
+  line-height: 48px;
   background: #fffff7;
-  color: #fff;
+  color: black;
   font-family: 'PT Sans', sans-serif;
   transition: all 0.4s ease; }
+
+#brand {
+  float: center; }
+
+.imgHolder {
+  width: 180px;
+  height: 180px;
+  clear: left;
+  display: inline; }
+
+.navButton {
+  display: inline;
+  padding: 24px 30px; }
 
 header.sticky {
   font-size: 24px;
   line-height: 48px;
   height: 100px;
   background: #0b030b;
+  color: white;
   text-align: center;
   z-index: 1000; }
 
@@ -96,13 +125,25 @@ h2 {
 /*}*/
 .musicSection {
   background-color: black;
-  height: 150px; }
+  height: 150px;
+  padding-top: 200px; }
 
 .musicHeader {
   text-align: right;
-  vertical-align: middle; }
+  vertical-align: middle;
+  background-color: black; }
 
 .musicText {
   font-size: 110px;
   color: white;
-  line-height: 150px; }
+  line-height: 150px;
+  margin-top: 0px;
+  margin-bottom: -49px; }
+
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }

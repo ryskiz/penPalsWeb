@@ -1,5 +1,7 @@
 $black-background-color: rgb(0, 0, 0);
-$font-white-color: rgb(255, 255, 255);
+$black-font-color: rgb(0,0,0);
+$white-font-color: rgb(255, 255, 255);
+$white-background-color: rgb(255, 255, 255);
 
 $small-breakpoint: 576px;
 $medium-breakpoint: 768px;
@@ -25,22 +27,35 @@ $xlarge-breakpoint: 1200px;
 }
 
 @media (min-width: 0px) {
-
+  .site-container{
+    padding: 30px;
+  }
 
 }
 
+//576
 @media (min-width: $small-breakpoint) {
-
+  .album-photo{
+    max-height: 200px;
+  }
 }
 
+//768
 @media (min-width: $medium-breakpoint) {
-
+  .album-photo{
+    max-height: 100%;
+  }
+  .soundcloudContainer{
+    height: 360px;
+  }
 }
+//992
 @media (min-width: $large-breakpoint) {
   .soundcloudContainer{
     height: 470px;
   }
 }
+//1200
 @media (min-width: $xlarge-breakpoint) {
   .soundcloudContainer{
     height: 570px;
@@ -51,13 +66,30 @@ header {
     position: fixed;
     width: 100%;
     text-align: center;
-    font-size: 72px;
     line-height: 108px;
-    height: 200px;
+    height: 180px;
+    font-size: 24px;
+    line-height: 48px;
     background: #fffff7;
-    color: #fff;
+    color: $black-font-color;
     font-family: 'PT Sans', sans-serif;
     transition: all 0.4s ease;
+}
+
+#brand {
+  float: center;
+}
+
+.imgHolder{
+  width: 180px;
+  height: 180px;
+  clear: left;
+  display: inline;
+}
+
+.navButton{
+  display: inline;
+  padding: 24px 30px;
 }
 
 header.sticky {
@@ -65,6 +97,7 @@ header.sticky {
     line-height: 48px;
     height: 100px;
     background: #0b030b;
+    color: $white-font-color;
     text-align: center;
     z-index: 1000;
 }
@@ -139,18 +172,43 @@ h2 {
 .musicSection {
   background-color: $black-background-color;
   height: 150px;
+  padding-top: 200px;
 }
 
 .musicHeader {
   text-align: right;
   vertical-align: middle;
+  background-color: black;
 }
+// .musicHeader {
+//     text-align: right;
+//     vertical-align: middle;
+//     background-color: grey;
+//     margin-top: -10px;
+//     height: 150px;
+// }
 
 .musicText{
   font-size: 110px;
   color: white;
   line-height: 150px;
+  margin-top: 0px;
+  margin-bottom: -49px;
 }
 
+// .musicText {
+//     font-size: 110px;
+//     color: white;
+//     line-height: 200px;
+//     margin: 0px;
+// }
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
 //Sound Cloud container
 //height 570px; padding 0%
