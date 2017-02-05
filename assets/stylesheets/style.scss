@@ -8,6 +8,7 @@ $medium-breakpoint: 768px;
 $large-breakpoint: 992px;
 $xlarge-breakpoint: 1200px;
 
+$navbar-height: 140px;
 
 //Normalize CSS
 * {
@@ -67,18 +68,32 @@ header {
     width: 100%;
     text-align: center;
     line-height: 108px;
-    height: 180px;
-    font-size: 24px;
+    height: $navbar-height;
+    font-size: 32px;
     line-height: 48px;
     background: #fffff7;
     color: $black-font-color;
     font-family: 'PT Sans', sans-serif;
     transition: all 0.4s ease;
+    padding: 10px;
+    a.navLinks{
+      color: $black-font-color;
+    }
 }
 
 #brand {
   float: center;
 }
+
+a.navLinks:hover{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+// .myNav{
+//   max-width: 100%;
+// }
+
 
 .imgHolder{
   width: 180px;
@@ -89,17 +104,18 @@ header {
 
 .navButton{
   display: inline;
-  padding: 24px 30px;
+  padding: 0px 30px;
 }
 
 header.sticky {
-    font-size: 24px;
-    line-height: 48px;
     height: 100px;
     background: #0b030b;
-    color: $white-font-color;
     text-align: center;
     z-index: 1000;
+    a.navLinks{
+     color: $white-font-color;
+    }
+
 }
 
 img {
@@ -171,8 +187,8 @@ h2 {
 
 .musicSection {
   background-color: $black-background-color;
-  height: 150px;
-  padding-top: 200px;
+  height: $navbar-height;
+  padding-top: $navbar-height;
 }
 
 .musicHeader {

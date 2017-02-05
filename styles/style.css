@@ -36,16 +36,23 @@ header {
   width: 100%;
   text-align: center;
   line-height: 108px;
-  height: 180px;
-  font-size: 24px;
+  height: 140px;
+  font-size: 32px;
   line-height: 48px;
   background: #fffff7;
   color: black;
   font-family: 'PT Sans', sans-serif;
-  transition: all 0.4s ease; }
+  transition: all 0.4s ease;
+  padding: 10px; }
+  header a.navLinks {
+    color: black; }
 
 #brand {
   float: center; }
+
+a.navLinks:hover {
+  font-weight: bold;
+  text-decoration: none; }
 
 .imgHolder {
   width: 180px;
@@ -55,16 +62,15 @@ header {
 
 .navButton {
   display: inline;
-  padding: 24px 30px; }
+  padding: 0px 30px; }
 
 header.sticky {
-  font-size: 24px;
-  line-height: 48px;
   height: 100px;
   background: #0b030b;
-  color: white;
   text-align: center;
   z-index: 1000; }
+  header.sticky a.navLinks {
+    color: white; }
 
 img {
   max-width: 100%;
@@ -125,8 +131,8 @@ h2 {
 /*}*/
 .musicSection {
   background-color: black;
-  height: 150px;
-  padding-top: 200px; }
+  height: 140px;
+  padding-top: 140px; }
 
 .musicHeader {
   text-align: right;
