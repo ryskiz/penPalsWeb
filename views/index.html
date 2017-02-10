@@ -14,24 +14,36 @@
 <body>
 <div class="clearfix">
     <header>
+      <div class="container myNav">
 
-    <!--TODO:  at less than 730px width or so, nav buttons do not font-weight
-        try using col-md and col-sm sies on the nav bar links to line up on top of each other
+    <!--TODO:  Breakpoint around 990 or so requires
+                     row forButtons to be vertically center
+                     vertical margin on the navButton groups with their col
+                Breakpoint around 580
+                        lower font size for text
+                        lower image size
         -->
-     <div class="navButton">
-         <a href="#music" class="navLinks"><span>Music</spa></a>
-     </div>
-     <div class="navButton">
-         <a href="#music" class="navLinks"><span>Videos</spa></a>
-     </div>
-      <div class="imgHolder">
-        <img id="brand" src="../assets/pics/PenPalsBatPen.png">
-      </div>
-      <div class="navButton">
-          <a href="#music" class="navLinks"><span>Tour</spa></a>
-      </div>
-      <div class="navButton">
-          <a href="#music" class="navLinks"><span>Merch</spa></a>
+        <div class="headerWrapper">
+              <div class="row forButtons">
+                 <div class="col-md-6 col-sm-12 navButton">
+                     <a href="#music" class="navLinks"><span>Music</spa></a>
+                 </div>
+                 <div class="col-md-6 col-sm-12 navButton">
+                     <a href="#music" class="navLinks"><span>Videos</spa></a>
+                 </div>
+             </div>
+             <div class="imgHolder">
+                <img id="brand" src="../assets/pics/PenPalsBatPen.png">
+             </div>
+             <div class="row forButtons">
+                  <div class="col-md-6 col-sm-12 navButton">
+                      <a href="#music" class="navLinks"><span>Tour</spa></a>
+                  </div>
+                  <div class="col-md-6 col-sm-12 navButton">
+                      <a href="#music" class="navLinks"><span>Merch</spa></a>
+                  </div>
+             </div>
+         </div>
       </div>
   <!-- </div> -->
 
