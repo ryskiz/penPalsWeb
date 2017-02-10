@@ -142,14 +142,11 @@ header {
   color: $black-font-color;
   font-family: 'PT Sans', sans-serif;
   transition: all 0.4s ease;
-  padding: 10px;
   a.navLinks {
-    color: $black-font-color
+    color: $black-font-color;
     font-family: 'PT Sans', sans-serif;
     transition: all 0.4s ease;
-    a.navLinks{
-      color: $black-font-color;
-    }
+  }
 }
 
 a.navLinks:hover {
@@ -165,7 +162,7 @@ a.navLinks:hover {
 // .myNav{
 //   max-width: 100%;
 // }
-  
+
 .imgHolder{
   clear: left;
   overflow: visible;
@@ -322,3 +319,8 @@ h2 {
 
 //Sound Cloud container
 //height 570px; padding 0%
+
+//Work on colored divs
+.black {
+  background-color: black;
+}
