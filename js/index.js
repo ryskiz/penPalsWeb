@@ -19,4 +19,14 @@ $(document).ready(function() {
     $('img', this).removeClass('blur');
     $('h1', this).fadeOut();
   });
+    $('.image').click(function() {
+        var buttonId = $(this).attr('id');
+        console.log(buttonId);
+        $('#modal-container').removeAttr('class').addClass(buttonId);
+        $('body').addClass('modal-active');
+    });
+    $('#modal-container').click(function(){
+        $(this).addClass('out');
+        $('body').removeClass('modal-active');
+    });
 });

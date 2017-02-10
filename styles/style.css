@@ -4,6 +4,15 @@
 .soundcloudContainer {
   padding: 0%; }
 
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  text-align: center; }
+
 #sc-widget {
   width: 75%;
   height: 100%;
@@ -47,12 +56,13 @@ header {
   header a.navLinks {
     color: black; }
 
-#brand {
-  float: center; }
+a.navLinks {
+  padding: 1px; }
 
 a.navLinks:hover {
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: -webkit-match-parent; }
 
 .imgHolder {
   width: 180px;
@@ -87,7 +97,8 @@ h1 {
   /*width: 100%;*/
   color: white;
   font-family: 'Proxima N W01 Bold', 'Helvetica', 'Arial', 'sans-serif';
-  display: none; }
+  display: none;
+  padding: 20px; }
 
 .container-fluid {
   padding-top: 200px; }
