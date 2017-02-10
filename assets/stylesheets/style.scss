@@ -33,19 +33,58 @@ $navbar-height: 140px;
   height: 100%;
   margin: auto 50px;
 }
+.imgHolder{
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
 
 @media (min-width: 0px) {
   .site-container {
     padding: 30px;
   }
-
+  .imgHolder{
+    height: 70px;
+    width: 70px;
+  }
+  .navButton{
+    font-size:20px;
+  }
+  .headerWrapper{
+    margin: 20px 0px;
+  }
+  .album-photo{
+    max-height: 200px;
+  }
+  .soundCloudContainer{
+    max-height: 200px;
+  }
 }
 
+@media (min-width: 502px) {
+  .headerWrapper{
+    padding: 20px;
+    margin: 0px;
+  }
+  .navButton{
+    font-size:26px;
+  }
+  .imgHolder{
+    height: 100px;
+    width: 100px;
+  }
+}
 //576
 @media (min-width: $small-breakpoint) {
   .album-photo {
     max-height: 200px;
   }
+}
+
+//576
+@media (max-width: $small-breakpoint) {
+  // .navButton{
+  //   font-size: 20px;
+  // }
 }
 
 //768
@@ -56,12 +95,31 @@ $navbar-height: 140px;
   .soundcloudContainer {
     height: 360px;
   }
+  .navButton.col-md-6{
+    margin-top:2.5px;
+    margin-bottom:2.5px;
+  }
+  .imgHolder{
+    height: 140px;
+    width: 140px;
+  }
+  .headerWrapper {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 //992
 @media (min-width: $large-breakpoint) {
   .soundcloudContainer {
     height: 470px;
+  }
+  .navButton{
+    margin-top: 0px;
+  }
+  .imgHolder{
+    height: 140px;
+    width: 140px;
   }
 }
 
@@ -86,15 +144,12 @@ header {
   transition: all 0.4s ease;
   padding: 10px;
   a.navLinks {
-    color: $black-font-color;
-  }
-}
-
-//#brand {
-//  float: center;
-//}
-a.navLinks {
-  padding: 1px;
+    color: $black-font-color
+    font-family: 'PT Sans', sans-serif;
+    transition: all 0.4s ease;
+    a.navLinks{
+      color: $black-font-color;
+    }
 }
 
 a.navLinks:hover {
@@ -103,31 +158,52 @@ a.navLinks:hover {
   text-align: -webkit-match-parent;
 }
 
+.container.myNav{
+  padding: 0px;
+  height: 140px;
+}
 // .myNav{
 //   max-width: 100%;
 // }
-
-.imgHolder {
-  width: 180px;
-  height: 180px;
+  
+.imgHolder{
   clear: left;
-  display: inline;
+  overflow: visible;
+  display: inline-block;
+  margin: 0px 20px;
 }
 
-.navButton {
-  display: inline;
-  padding: 0px 30px;
+#brand {
+  // float: center;
+  overflow: visible;
+}
+
+.navButton{
+  // display: inline-block;
+  // width: 10%;
+  padding: 0px 0px;
+}
+
+.row.forButtons{
+  margin: 0px;
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
 }
 
 header.sticky {
-  height: 100px;
-  background: #0b030b;
-  text-align: center;
-  z-index: 1000;
-  a.navLinks {
-    color: $white-font-color;
-  }
+    height: 100px;
+    background: $black-background-color;
+    text-align: center;
+    z-index: 1000;
+    a.navLinks{
+     color: $white-font-color;
+    }
+}
 
+header.sticky .headerWrapper{
+  padding: 0px;
+  margin: 0px;
 }
 
 img {
