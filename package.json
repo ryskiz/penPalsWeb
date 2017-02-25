@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ryskiz/penPalsWeb#readme",
   "dependencies": {
     "build-css": "^0.2.0",
+    "fullpage.js": "^2.9.2",
     "node-sass": "^4.5.0"
   }
 }
