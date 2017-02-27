@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    $('#fullpage').fullpage({
+        menu: '#menu',
+        anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection'],
+        autoScrolling: false,
+        fitToSection: false
+    });
   $(window).scroll(function() {
     if ($(this).scrollTop() > 30) {
       console.log('trigger back up');
